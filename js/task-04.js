@@ -8,20 +8,20 @@ const counterValue = {
     },
 };
 
-const counterRef = document.querySelector('div');
+const counter = document.querySelector('div');
 
-const decrementRef = counterRef.firstElementChild;
+const decrement = counter.firstElementChild;
 
-const valueRef = decrementRef.nextElementSibling;
+const value = decrement.nextElementSibling;
 
-const incrementRef = counterRef.lastElementChild;
+const increment = counter.lastElementChild;
 
-decrementRef.addEventListener('click', function () {
+decrement.addEventListener('click', function () {
     counterValue.decrement();
-    valueRef.textContent = counterValue.value;
+    value.textContent = counterValue.value;
 },);
 
-incrementRef.addEventListener('click', function () {
+increment.addEventListener('click', function () {
     counterValue.increment();
-    valueRef.textContent = counterValue.value;
+    value.textContent = counterValue.value;
 },);
