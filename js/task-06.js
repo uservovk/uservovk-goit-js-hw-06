@@ -7,12 +7,12 @@ targetInputRef.addEventListener('blur', onTargetInputRefBlur);
 function onTargetInputRefBlur(event) {
     if (event.currentTarget.value.length === requiredNumberOfSymbols) {
         targetInputRef.classList.add('valid');
-        removeClass();
+        removeExcessClass();
     } else { targetInputRef.classList.add('invalid'); };
     
 };
 
-function removeClass() {
+function removeExcessClass() {
     if (targetInputRef.classList.contains('invalid')) {
         targetInputRef.classList.remove('invalid');
     };
