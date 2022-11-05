@@ -1,9 +1,11 @@
+//-------------------------------NUMBER OF CATEGORIES-----------------------------------
 const ulCategoriesRef = document.querySelector('ul');
 
 const ulNumberOfCategoriesRef = ulCategoriesRef.children;
 console.log('Number of categories:', ulNumberOfCategoriesRef.length);
 
-// ------------------------------------------------------------------------------------------
+
+// --------------------------------CATEGORY ANIMALS-------------------------------------
 
 const firstCategoryRef = ulNumberOfCategoriesRef[0];
 
@@ -14,7 +16,8 @@ const lastElementChildRef = firstCategoryRef.lastElementChild;
 const amountElementsLastChild = lastElementChildRef.children;
 console.log('Elements:', amountElementsLastChild.length);
 
-// ----------------------------------------------------------------------------------------------
+
+// --------------------------------CATEGORY PRODUCTS-------------------------------------
 
 const secondCategoryRef = ulNumberOfCategoriesRef[1];
 
@@ -25,7 +28,8 @@ const lastElementsChildRef = secondCategoryRef.lastElementChild;
 const amountElementLastChildRef = lastElementsChildRef.children;
 console.log('Elements:', amountElementLastChildRef.length);
 
-// ---------------------------------------------------------------------------------------
+
+// --------------------------------CATEGORY TECHNOLOGIES----------------------------------
 
 const thirdCategoryEl = ulNumberOfCategoriesRef[2];
 

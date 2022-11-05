@@ -12,7 +12,7 @@ const counter = document.querySelector('div');
 
 const decrement = counter.firstElementChild;
 
-const value = decrement.nextElementSibling;
+const value = document.querySelector('#value');
 
 const increment = counter.lastElementChild;
 

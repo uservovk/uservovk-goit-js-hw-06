@@ -1,7 +1,12 @@
-const input = document.querySelector('input');
+const targetInput = document.querySelector('#name-input');
+const titleName = document.querySelector('#name-output');
 
-const titleName = document.querySelector('h1>span');
+targetInput.addEventListener('input', onTargetInputInput);
 
-input.addEventListener('input', (event) => {
+function onTargetInputInput(event) {
     titleName.textContent = event.currentTarget.value;
-});
+    
+    if (targetInput.value === '') {
+        titleName.textContent = 'Anonymous';
+    };
+};
