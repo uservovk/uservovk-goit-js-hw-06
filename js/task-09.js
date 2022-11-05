@@ -1,10 +1,10 @@
 const bodyRef = document.querySelector('body');
 const buttonRef = document.querySelector('.change-color');
-const nameOfBgColorRef = document.querySelector('.color');
+const valueOfBgColorRef = document.querySelector('.color');
 
 buttonRef.addEventListener('click', () => {
   bodyRef.style.backgroundColor = getRandomHexColor();
-  nameOfBgColorRef.textContent = bodyRef.style.backgroundColor;
+  valueOfBgColorRef.textContent = bodyRef.style.backgroundColor;
 });
 
 function getRandomHexColor() {
