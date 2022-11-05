@@ -1,12 +1,12 @@
-const targetInput = document.querySelector('#name-input');
-const titleName = document.querySelector('#name-output');
+const targetInputRef = document.querySelector('#name-input');
+const titleNameRef = document.querySelector('#name-output');
 
-targetInput.addEventListener('input', onTargetInputInput);
+targetInputRef.addEventListener('input', onTargetInputRefInput);
 
-function onTargetInputInput(event) {
-    titleName.textContent = event.currentTarget.value;
+function onTargetInputRefInput(event) {
+    titleNameRef.textContent = event.currentTarget.value;
     
-    if (targetInput.value === '') {
-        titleName.textContent = 'Anonymous';
+    if (targetInputRef.value === '') {
+        titleNameRef.textContent = 'Anonymous';
     };
 };

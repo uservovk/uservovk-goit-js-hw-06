@@ -1,19 +1,19 @@
-const targetInput = document.querySelector('#validation-input');
+const targetInputRef = document.querySelector('#validation-input');
 
-const requiredNumberOfSymbols = Number(targetInput.dataset.length);
+const requiredNumberOfSymbols = Number(targetInputRef.dataset.length);
 
-targetInput.addEventListener('blur', onTargetInputBlur); 
+targetInputRef.addEventListener('blur', onTargetInputRefBlur); 
 
-function onTargetInputBlur(event) {
+function onTargetInputRefBlur(event) {
     if (event.currentTarget.value.length === requiredNumberOfSymbols) {
-        targetInput.classList.add('valid');
+        targetInputRef.classList.add('valid');
         removeClass();
-    } else { targetInput.classList.add('invalid'); };
+    } else { targetInputRef.classList.add('invalid'); };
     
 };
 
 function removeClass() {
-    if (targetInput.classList.contains('invalid')) {
-        targetInput.classList.remove('invalid');
+    if (targetInputRef.classList.contains('invalid')) {
+        targetInputRef.classList.remove('invalid');
     };
 };
