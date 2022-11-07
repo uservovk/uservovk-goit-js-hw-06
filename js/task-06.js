@@ -7,13 +7,21 @@ targetInputRef.addEventListener('blur', onTargetInputRefBlur);
 function onTargetInputRefBlur(event) {
     if (event.currentTarget.value.length === requiredNumberOfSymbols) {
         targetInputRef.classList.add('valid');
-        removeExcessClass();
-    } else { targetInputRef.classList.add('invalid'); };
+        removeClassInvalid();
+    } else {
+        targetInputRef.classList.add('invalid');
+    removeClassValid()};
     
 };
 
-function removeExcessClass() {
+function removeClassInvalid() {
     if (targetInputRef.classList.contains('invalid')) {
         targetInputRef.classList.remove('invalid');
+    };
+};
+
+function removeClassValid() {
+    if (targetInputRef.classList.contains('valid')) {
+        targetInputRef.classList.remove('valid');
     };
 };
